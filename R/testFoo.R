@@ -27,4 +27,12 @@ testFoo <- function(cif){
   print(mergedData)
 
 
+  tryCatch(print(x),
+           error = function(e){
+             message('x is not accessible')
+             return(NA)
+           })
+
+
+
 }
