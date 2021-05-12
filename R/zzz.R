@@ -12,8 +12,6 @@
 
   cacheMaybeOther <<- new.env(parent=emptyenv())
 
-  ##Not what we want
-
 }
 
 

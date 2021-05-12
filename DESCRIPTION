@@ -11,5 +11,6 @@ Description: cool
 License: MIT + file LICENSE
 URL: https://www.fuckyou.com
 Imports:
-    R6
+    R6,
+    westenergy
 RoxygenNote: 7.1.1

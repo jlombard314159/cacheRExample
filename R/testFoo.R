@@ -35,4 +35,7 @@ testFoo <- function(cif){
 
 
 
+  print(westenergy::Timestamp())
+  print(Timestamp())
+
 }
