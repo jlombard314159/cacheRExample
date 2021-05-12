@@ -17,3 +17,7 @@ cache <- 'abc'
 
 coolBeans::testFoo(cif = cif)
 
+cache <- new.env(parent=emptyenv())
+cache$taxa <- 'abc'
+
+coolBeans::testFoo(cif = cif)
