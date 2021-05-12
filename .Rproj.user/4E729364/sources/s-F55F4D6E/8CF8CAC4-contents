@@ -9,9 +9,17 @@
 
 testFoo <- function(cif){
 
-  browser()
   data <- callAPI()
 
-  otherCache$taxa <- data
+  #Cant access
+  tryCatch(otherCache$taxa <- data,
+           error = function(e){
+            paste0('i told you so')
+           })
+
+
+  #Grab from a global object
+  print(cache$taxa)
+
 
 }
