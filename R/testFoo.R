@@ -14,12 +14,17 @@ testFoo <- function(cif){
   #Cant access
   tryCatch(otherCache$taxa <- data,
            error = function(e){
-            paste0('i told you so')
+            message('otherCache not accessible but instantiated in .onLoad')
+             return(NA)
            })
 
 
   #Grab from a global object
   print(cache$taxa)
+
+  mergedData <- nestedFunctionCall(cif)
+
+  print(mergedData)
 
 
 }
